@@ -1,3 +1,8 @@
+//function to detect whether the user is on the phone
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Navbar scroll behavior
     const header = document.querySelector('header');
@@ -39,13 +44,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle with animation
     const menuToggle = document.getElementById('menu-toggle');
     
-// Card scrolling functionality with improved timing. The Picture links are in the CSS (adding the class changes the image)
+
+    // Card scrolling functionality with improved timing. The Picture links are in the CSS (adding the class changes the image)
     const cardsSection = document.getElementById('cards');
     const cardsContainer = document.querySelector('.card-container');
     const cards = document.querySelectorAll('.card');
     let currentCardIndex = 0;
     
     function updateCardPosition() {
+        // Skip animation on mobile devices
+        if (isMobileDevice()) {
+            return;
+        }
+
         cards.forEach((card, index) => {
             card.classList.remove('active', 'previous');
             
@@ -57,11 +68,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Initialize the first card
-    updateCardPosition();
-    
+    // Initialize the first card (only on desktop)
+    if (!isMobileDevice()) {
+        updateCardPosition();
+    }
+        
     // Enhanced scroll handling for cards
     function handleCardsScroll() {
+        // Skip scroll handling on mobile devices
+        if (isMobileDevice()) {
+            return;
+        }
+
         const cardsSectionTop = cardsSection.offsetTop;
         const cardsSectionHeight = cardsSection.offsetHeight;
         const scrollPosition = window.scrollY;
@@ -95,6 +113,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Smooth hero transition with improved timing
     window.addEventListener('scroll', function() {
+        // Skip hero fade on mobile devices
+        if (isMobileDevice()) {
+            return;
+        }
+
         const scrollPosition = window.scrollY;
         const cardsSection = document.getElementById('cards');
         const servicesSection = document.getElementById('services');
@@ -116,6 +139,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Handle window resize to re-evaluate mobile state
+    window.addEventListener('resize', function() {
+        if (isMobileDevice()) {
+            // Remove all card classes when switching to mobile
+            cards.forEach(card => {
+                card.classList.remove('active', 'previous');
+            });
+            // Reset hero opacity on mobile
+            document.getElementById('hero').style.opacity = '1';
+        } else {
+            // Re-initialize desktop behavior
+            updateCardPosition();
+        }
+    });
 
     const navMenu = document.getElementById('nav-menu');
     
