@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bobotheatrist.github.io/sitemap.xml
