@@ -442,6 +442,19 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = 'none';
         }
     });
+
+    // Keyboard navigation for modal
+    document.addEventListener('keydown', (e) => {
+        if (modal.style.display === 'flex') {
+            if (e.key === 'ArrowLeft') {
+                showImage(currentImageIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+                showImage(currentImageIndex + 1);
+            } else if (e.key === 'Escape') {
+                modal.style.display = 'none';
+            }
+        }
+    });
     
     // Update active nav link on scroll
     window.addEventListener('scroll', () => {
