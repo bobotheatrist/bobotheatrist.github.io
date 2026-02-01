@@ -417,7 +417,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 'images/projects/oltar/2.webp',
                 'images/projects/oltar/3.webp',
                 'images/projects/oltar/4.webp',
-                'images/projects/oltar/5.webp'
+                'images/projects/oltar/5.webp',
+                'images/projects/oltar/6.webp',
+                'images/projects/oltar/7.webp',
+                'images/projects/oltar/8.webp',
+                'images/projects/oltar/9.webp',
+                'images/projects/oltar/10.webp'
             ],
             'golubovec': [
                 'images/projects/golubovec/0.webp',
