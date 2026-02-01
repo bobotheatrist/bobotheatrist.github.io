@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="ART3um d.o.o. i TAŠEL d.o.o. - specijalizirane restauratorske radionice za obnovu kamenih i štuko elemenata, restauraciju kulturnih dobara i arhitektonske baštine u Hrvatskoj.">
-    <meta name="keywords" content="restauracija,  kulturna dobra, arhitektonska baština, restauratorski radovi, istražni radovi, štuko elementi, kamen, mikropjeskarenje, izrada modela, izrada kalupa, lijevanje pozitiva, polikromija, vučene profilacije, stucco scagliola, montaže i demontaže, Hrvatska, Zagreb">
+    <meta name="description" content="" data-key="meta_description">
+    <meta name="keywords" content="" data-key="meta_keywords">
     <meta name="author" content="ART3um d.o.o. i TAŠEL d.o.o.">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,20 +15,25 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://art3um.hr/">
-    <meta property="og:title" content="ART3um i TAŠEL - Restauracija kulturnih dobara">
-    <meta property="og:description" content="Specijalizirane restauratorske radionice za obnovu kamenih i štuko elemenata. Kvaliteta iza koje stojimo vlastitim imenom.">
+    <meta property="og:title" content="" data-key="og_title">
+    <meta property="og:description" content="" data-key="og_description">
     <meta property="og:image" content="https://yourdomain.com/images/logo.webp">
     <meta property="og:locale" content="hr_HR">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://art3um.hr/">
-    <meta property="twitter:title" content="ART3um i TAŠEL - Restauracija kulturnih dobara">
-    <meta property="twitter:description" content="Specijalizirane restauratorske radionice za obnovu kamenih i štuko elemenata.">
+    <meta property="twitter:title" content="" data-key="twitter_title">
+    <meta property="twitter:description" content="" data-key="twitter_description">
     <meta property="twitter:image" content="https://art3um.hr/images/logo.webp">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://art3um.hr/">
+
+    <!-- hreflang Tags -->
+    <link rel="alternate" hreflang="hr" href="https://art3um.hr/?lang=hr" />
+    <link rel="alternate" hreflang="en" href="https://art3um.hr/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://art3um.hr/?lang=hr" />
 
     <!-- Language -->
     <html lang="hr">
@@ -49,6 +54,7 @@
     ],
     "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Eugena Tomića 6s",
         "addressCountry": "HR",
         "addressLocality": "Zagreb",
         "addressRegion": "Grad Zagreb",
@@ -75,7 +81,8 @@
         "Stucco scagliola",
         "Stucco lustro",
         "Mikropjeskarenje",
-        "Montaže i demontaže"
+        "Montaže i demontaže",
+        "Lasersko čišćenje"
     ],
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -103,6 +110,14 @@
             "@type": "Service", 
             "name": "Mikropjeskarenje",
             "description": "Precizno čišćenje površina mikropjeskarenjem"
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "Service", 
+            "name": "Lasersko čišćenje",
+            "description": "Suvremene metode neinvazivnog čišćenja površina laserom"
             }
         },
         {
@@ -183,10 +198,15 @@
         </a>
         <nav>
             <ul id="nav-menu">
-                <li><a href="#cards">O nama</a></li>
-                <li><a href="#services">Usluge</a></li>
-                <li><a href="#gallery">Projekti</a></li>
-                <li><a href="#contact">Kontaktirajte nas</a></li>
+                <li><a href="#cards" data-key="nav_about">O nama</a></li>
+                <li><a href="#services" data-key="nav_services">Usluge</a></li>
+                <li><a href="#gallery" data-key="nav_projects">Projekti</a></li>
+                <li><a href="#contact" data-key="nav_contact">Kontaktirajte nas</a></li>
+                <li class="language-switcher-item">
+                    <a href="?lang=hr" class="language-switcher" id="hr-lang-link">HR</a>
+                    <span class="language-separator">|</span>
+                    <a href="?lang=en" class="language-switcher" id="en-lang-link">EN</a>
+                </li>
             </ul>
             <div class="menu-toggle" id="menu-toggle">
                 <span></span>
@@ -203,8 +223,8 @@
             <div class="logo-animation">
                 <img src="images/logo.webp" alt="ART3um i Tašel" class="logo-hero" loading="lazy">
             </div>
-            <h1>Restauracija kulturnih dobara</h1>
-            <p>Kvaliteta iza koje stojimo vlastitim imenom.</p>
+            <h1 data-key="hero_h1">Restauracija kulturnih dobara</h1>
+            <p data-key="hero_p">Kvaliteta iza koje stojimo vlastitim imenom.</p>
         </div>
     </section>
 
@@ -213,27 +233,27 @@
         <div class="card-container">
             <div class="card">
                 <div class="card-text">
-                    <h2>Tko smo mi?</h2>
-                    <p><strong>ART3um d.o.o.</strong> i <strong>TAŠEL d.o.o.</strong> specijalizirane su <strong>restauratorske radionice</strong> za <strong>obnovu kamenih i štuko elemenata</strong>, kao i drugih vrijednih detalja arhitektonske baštine.</p>
-                    <p>Naš tim čine <strong>visokoobrazovani i licencirani konzervatori-restauratori</strong> s bogatim praktičnim iskustvom u zaštiti kulturne baštine.</p>
-                    <p>Naš rad temelji se na <strong>znanju, iskustvu i odgovornosti prema kulturnom nasljeđu</strong>, a svakom projektu pristupamo <strong>stručno, fleksibilno i pouzdano.</strong> Naglasak stavljamo na <strong>interdisciplinarni pristup, primjenu suvremenih metodologija i poštivanje načela očuvanja izvornosti materijala i povijesne autentičnosti objekta.</strong></p>  
-                    <p>U svakom kutku Lijepe naše, dostupni smo da čuvamo priče stoljeća povijesti za buduće naraštaje.</p>
+                    <h2 data-key="about_title">Tko smo mi?</h2>
+                    <p data-key="about_p1"><strong>ART3um d.o.o.</strong> i <strong>TAŠEL d.o.o.</strong> specijalizirane su <strong>restauratorske radionice</strong> za <strong>obnovu kamenih i štuko elemenata</strong>, kao i drugih vrijednih detalja arhitektonske baštine.</p>
+                    <p data-key="about_p2">Naš tim čine <strong>visokoobrazovani i licencirani konzervatori-restauratori</strong> s bogatim praktičnim iskustvom u zaštiti kulturne baštine.</p>
+                    <p data-key="about_p3">Naš rad temelji se na <strong>znanju, iskustvu i odgovornosti prema kulturnom nasljeđu</strong>, a svakom projektu pristupamo <strong>stručno, fleksibilno i pouzdano.</strong> Naglasak stavljamo na <strong>interdisciplinarni pristup, primjenu suvremenih metodologija i poštivanje načela očuvanja izvornosti materijala i povijesne autentičnosti objekta.</strong></p>  
+                    <p data-key="about_p4">U svakom kutku Lijepe naše, dostupni smo da čuvamo priče stoljeća povijesti za buduće naraštaje.</p>
                 </div>
                 <div class="card-image"></div>
             </div>
             <div class="card">
                 <div class="card-text">
-                    <h2>Misija</h2>
-                    <p>Naša je misija pružiti <strong>vrhunsku restauratorsku uslugu u skladu s etičkim i konzervatorskim načelima</strong> - bilo da se radi o <strong>obnovi kamenog portala, štuko vijenca ili rekonstrukciji izgubljenog detalja prema staroj fotografiji.</strong></p>
-                    <p>Kroz jasnu komunikaciju, stručnu izvedbu i partnerstvo, doprinosimo očuvanju baštine zajedničkog kulturnog temelja.</p>
+                    <h2 data-key="mission_title">Misija</h2>
+                    <p data-key="mission_p1">Naša je misija pružiti <strong>vrhunsku restauratorsku uslugu u skladu s etičkim i konzervatorskim načelima</strong> - bilo da se radi o <strong>obnovi kamenog portala, štuko vijenca ili rekonstrukciji izgubljenog detalja prema staroj fotografiji.</strong></p>
+                    <p data-key="mission_p2">Kroz jasnu komunikaciju, stručnu izvedbu i partnerstvo, doprinosimo očuvanju baštine zajedničkog kulturnog temelja.</p>
                 </div>
                 <div class="card-image"></div>
             </div>
             <div class="card">
                 <div class="card-text">
-                    <h2>Vizija</h2>
-                    <p>Vjerujemo da <strong>restauracija ne znači samo popravak - već obnavljanje povjerenja u trajne vrijednosti.</strong></p>
-                    <p>Naša vizija je <strong>očuvanje povijesnih struktura</strong> na način koji spaja <strong>znanstveni pristup, zanatsku preciznost i poštovanje prema svakom sloju vremena.</strong></p>
+                    <h2 data-key="vision_title">Vizija</h2>
+                    <p data-key="vision_p1">Vjerujemo da <strong>restauracija ne znači samo popravak - već obnavljanje povjerenja u trajne vrijednosti.</strong></p>
+                    <p data-key="vision_p2">Naša vizija je <strong>očuvanje povijesnih struktura</strong> na način koji spaja <strong>znanstveni pristup, zanatsku preciznost i poštovanje prema svakom sloju vremena.</strong></p>
                 </div>
                 <div class="card-image"></div>
             </div>
@@ -243,14 +263,14 @@
     <!-- Services Section -->
     <section id="services">
         <div class="section-title">
-            <h2>Naše usluge:</h2>
+            <h2 data-key="services_title">Naše usluge:</h2>
         </div>
         <div class="services-container">
             <div class="service-card">
                 <div class="polaroid">
                     <img src="images/services/1 restauratorski radovi.webp" alt="Restauratorski radovi na kulturnim dobrima" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Restauratorski radovi</h3>
+                        <h3 data-key="service_1_title">Restauratorski radovi</h3>
                     </div>
                 </div>
             </div>
@@ -258,7 +278,7 @@
                 <div class="polaroid">
                     <img src="images/services/2 istrazni radovi.webp" alt="Istražni radovi prije restauracije" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Istražni radovi</h3>
+                        <h3 data-key="service_2_title">Istražni radovi</h3>
                     </div>
                 </div>
             </div>
@@ -266,7 +286,7 @@
                 <div class="polaroid">
                     <img src="images/services/3 mikropjeskarenje.webp" alt="Čišćenje površina mikropjeskarenjem" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Mikropjeskarenje</h3>
+                        <h3 data-key="service_3_title">Mikropjeskarenje</h3>
                     </div>
                 </div>
             </div>
@@ -274,7 +294,7 @@
                 <div class="polaroid">
                     <img src="images/services/4 izrada modela prema povijesnim fotografijama.webp" alt="Izrada modela i rekonstrukcija izgubljenih dijelova temeljem povijesnih fotografija" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Izrada modela prema povijesnim fotografijama</h3>
+                        <h3 data-key="service_4_title">Izrada modela prema povijesnim fotografijama</h3>
                     </div>
                 </div>
             </div>
@@ -282,7 +302,7 @@
                 <div class="polaroid">
                     <img src="images/services/5 izrada kalupa od gume.webp" alt="Izrada kalupa za izradu kopija skulptura i ornamenata" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Izrada kalupa od gume</h3>
+                        <h3 data-key="service_5_title">Izrada kalupa od gume</h3>
                     </div>
                 </div>
             </div>
@@ -290,7 +310,7 @@
                 <div class="polaroid">
                     <img src="images/services/6 lijevanje pozitiva iz kalupa.webp" alt="Lijevanje pozitiva iz kalupa" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Lijevanje pozitiva iz kalupa</h3>
+                        <h3 data-key="service_6_title">Lijevanje pozitiva iz kalupa</h3>
                     </div>
                 </div>
             </div>
@@ -298,7 +318,7 @@
                 <div class="polaroid">
                     <img src="images/services/7 montaze i demontaze.webp" alt="Montaže i demontaže elemenata kulturnih dobara" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Montaže i demontaže</h3>
+                        <h3 data-key="service_7_title">Montaže i demontaže</h3>
                     </div>
                 </div>
             </div>
@@ -306,7 +326,7 @@
                 <div class="polaroid">
                     <img src="images/services/8 vucene profilacije.webp" alt="Obrada i izrada včenih profilacija" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Izrada vučenih profilacija</h3>
+                        <h3 data-key="service_8_title">Izrada vučenih profilacija</h3>
                     </div>
                 </div>
             </div>
@@ -314,7 +334,7 @@
                 <div class="polaroid">
                     <img src="images/services/9 kamen.webp" alt="Restauracija kamena i kamenih elemenata kulturnih dobara" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Restauracija kamena</h3>
+                        <h3 data-key="service_9_title">Restauracija kamena</h3>
                     </div>
                 </div>
             </div>
@@ -322,7 +342,7 @@
                 <div class="polaroid">
                     <img src="images/services/10 stucco tehnike.webp" alt="Restauracija i primjena tradicionalnih Stucco tehnika" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Stucco tehnike</h3>
+                        <h3 data-key="service_10_title">Stucco tehnike</h3>
                     </div>
                 </div>
             </div>
@@ -330,7 +350,15 @@
                 <div class="polaroid">
                     <img src="images/services/11 polikromija.webp" alt="Restauracija polikromija" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Polikromija</h3>
+                        <h3 data-key="service_11_title">Polikromija</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="polaroid">
+                    <img src="images/services/12 lasersko ciscenje.webp" alt="Neinvazivne metode laserskog čišćenja površina" loading="lazy">
+                    <div class="polaroid-caption">
+                        <h3 data-key="service_12_title">Lasersko čišćenje</h3>
                     </div>
                 </div>
             </div>
@@ -340,54 +368,62 @@
     <!-- Gallery Section -->
     <section id="gallery">
         <div class="section-title">
-            <h2>Portfelj restauratorskih projekata na kojima smo sudjelovali:</h2>
+            <h2 data-key="projects_title">Portfelj restauratorskih projekata na kojima smo sudjelovali:</h2>
         </div>
         <div class="gallery-container">
-            <div class="service-card gallery-item" data-title="Restauracija crkve Sv. Blaža" data-description="Na kamenoj plastici crkve sv. Blaža u Zagrebu provedeni su opsežni konzervatorsko-restauratorski radovi koji su, brižno uklanjajući naslage vremena, obuhvaćali pjeskarenje površina, obnovu fuga i preciznu sanaciju oštećenja, čime je oblikovnoj cjelini vraćena autentičnost i izražajnost izvorne forme.">
+            <div class="service-card gallery-item" data-project="blaz">
                 <div class="polaroid">
                     <img src="images/projects/blaz/blaz.webp" alt="Restauracija crkve Sv. Blaža u Zagrebu" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Restauracija Crkve Sv. Blaža</h3>
+                        <h3 data-key="project_blaz_title">Restauracija Crkve Sv. Blaža</h3>
                     </div>
                 </div>
             </div>
-            <div class="service-card gallery-item" data-title="Restauracija Hrvatsko-slavonske zemaljske centralne štedionice (križanje Ilice i Gundulićeve)" data-description="Na pročelju zgrade Hrvatsko-slavonske zemaljske štedionice provedeni su istražni i restauratorski radovi koji su uključivali uklanjanje naknadnih slojeva boje, sanaciju i rekonstrukciju oštećenih štukatura te restauraciju izvornih medaljona. Tim je zahvatima pročelju vraćen autentičan izgled i visoka estetska vrijednost.">
+            <div class="service-card gallery-item" data-project="gunduliceva">
                 <div class="polaroid">
                     <img src="images/projects/gunduliceva/gunduliceva.webp" alt="Restauracija Hrvatsko-slavonske zemaljske centralne štedionice na križanju Ilice i Gundulićeve" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Restauracija Hrvatsko-slavonske zemaljske centralne štedionice (Ilica/Gundulićeva)</h3>
+                        <h3 data-key="project_gunduliceva_title">Restauracija Hrvatsko-slavonske zemaljske centralne štedionice (Ilica/Gundulićeva)</h3>
                     </div>
                 </div>
             </div>
-            <div class="service-card gallery-item" data-title="Restauracija Hrvatske akademije znanosti i umjetnosti: HAZU" data-description="Restauracija pročelja zgrade HAZU na Zrinjevcu obuhvatila je čišćenje kamene plastike visokotlačnim peračem i pjeskarenjem, čime su uklonjene tvrdokorne naslage i inkrustracije nataložene tijekom vremena. U sklopu zahvata rekonstruirani su vijenci, polubaze stupova te kameni okviri i zaglavno kamenje prozora, pri čemu je pročelju vraćena jasnoća oblikovanja i dostojanstvo povijesne arhitekture.">
+            <div class="service-card gallery-item" data-project="hazu">
                 <div class="polaroid">
                     <img src="images/projects/hazu/hazu.webp" alt="Restauracija pročelja Hrvatske akademije znanosti i umjetnosti - čišćenje kamene plastike i rekonstrukcija vijenaca" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Restauracija pročelja Hrvatske akademije znanosti i umjetnosti: HAZU</h3>
+                        <h3 data-key="project_hazu_title">Restauracija pročelja Hrvatske akademije znanosti i umjetnosti: HAZU</h3>
                     </div>
                 </div>
             </div>
-            <div class="service-card gallery-item" data-title="Restauracija atike svečanog ulaza Nadbiskupskog dvora - Kaptol" data-description="Restauracija atike svečanog ulaza Nadbiskupskog dvora, koja je u potresu pretrpjela potpuni urušaj, izvedena je preciznom rekonstrukcijom temeljenom na detaljnim arhivskim fotografijama. Svaki je element pažljivo obnovljen, vraćajući ovoj važnoj arhitektonskoj cjelini njezin izvorni oblik i povijesni značaj.">
+            <div class="service-card gallery-item" data-project="kaptol">
                 <div class="polaroid">
                     <img src="images/projects/kaptol/prije potresa 02.webp" alt="Restauracija atike svečanog ulaza Nadbiskupskog dvora na Kaptolu" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Restauracija atike svečanog ulaza Nadbiskupskog dvora na Kaptolu</h3>
+                        <h3 data-key="project_kaptol_title">Restauracija atike svečanog ulaza Nadbiskupskog dvora na Kaptolu</h3>
                     </div>
                 </div>
             </div>
-            <div class="service-card gallery-item" data-title="Restauracija Ministarstva državne imovine - Stucco Scagliola" data-description="Stucco scagliola, tradicionalna tehnika umjetničkog modeliranja i dekorativnog premazivanja koja vješto imitira mramor, u Ministarstvu državne imovine restaurirana je uklanjanjem starih slojeva voska, sanacijom pukotina, rekonstrukcijom teško oštećenih dijelova izvornom tehnikom te nanošenjem zaštitnog sloja koji osigurava dugotrajnu očuvanost.">
+            <div class="service-card gallery-item" data-project="scagliola">
                 <div class="polaroid">
                     <img src="images/projects/scagliola/12.webp" alt="Stucco Scagliola restauracija u Ministarstvu državne imovine" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Restauracija Ministarstva državne imovine - Stucco Scagliola</h3>
+                        <h3 data-key="project_scagliola_title">Restauracija Ministarstva državne imovine - Stucco Scagliola</h3>
                     </div>
                 </div>
             </div>
-            <div class="service-card gallery-item" data-title="Restauracija glavnog oltara - Crkva Blažene Djevice Marije - Nova Kapela" data-description="Oltar u Novoj Kapeli, izrađen u tehnici stucco scagliola s bogatim drvenim ornamentima, restauriran je kroz pažljivu demontažu i obnovu skulptura, uz temeljitu sanaciju oštećenja izazvanih vlagom i solima, čime mu je vraćen izvorni sjaj i umjetnička cjelovitost.">
+            <div class="service-card gallery-item" data-project="oltar">
                 <div class="polaroid">
                     <img src="images/projects/oltar/oltar.webp" alt="Restauracija glavnog oltara u Crkvi Blažene Djevice Marije u Novoj Kapeli" loading="lazy">
                     <div class="polaroid-caption">
-                        <h3>Restauracija glavnog oltara u Crkvi Blažene Djevice Marije - Nova Kapela</h3>
+                        <h3 data-key="project_oltar_title">Restauracija glavnog oltara u Crkvi Blažene Djevice Marije - Nova Kapela</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card gallery-item" data-project="golubovec">
+                <div class="polaroid">
+                    <img src="images/projects/golubovec/stubicki_golubovec.webp" alt="Restauracija kamenih elemenata dvorca Stubički Golubovec" loading="lazy">
+                    <div class="polaroid-caption">
+                        <h3 data-key="project_golubovec_title">Restauracija kamenih elemenata dvorca Stubički Golubovec</h3>
                     </div>
                 </div>
             </div>
@@ -427,8 +463,8 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="section-title">
-            <h2>Kontaktirajte naše stručnjake</h2>
-            <p>Za sve informacije o restauraciji kulturnih dobara ili za suradnju:</p>
+            <h2 data-key="contact_title">Kontaktirajte naše stručnjake</h2>
+            <p data-key="contact_p">Za sve informacije o restauraciji kulturnih dobara ili za suradnju:</p>
             <div class="contact-emails">
                 <p><a href="mailto:robert@art3um.hr"><i class="fas fa-envelope"></i> robert@art3um.hr</a></p>
                 <p><a href="mailto:tasel.restauriranje@gmail.com"><i class="fas fa-envelope"></i> tasel.restauriranje@gmail.com</a></p>
@@ -436,7 +472,7 @@
         </div>
 
         <div class="social-media">
-            <p class="social-text">Zapratite nas i na društvenim mrežama.</p>
+            <p class="social-text" data-key="contact_social">Zapratite nas i na društvenim mrežama.</p>
             <div class="social-icons">
                 <a href="https://www.instagram.com/monumentalci/" target="_blank" class="social-icon">
                     <i class="fab fa-instagram"></i>
@@ -445,11 +481,12 @@
         </div>
     </section>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 
     <!-- Footer Section -->
     <footer>
-        <p class="disclaimer">Ova web stranica ne prikuplja kolačiće niti osobne podatke.</p>
+        <p class="disclaimer" data-key="footer_disclaimer">Ova web stranica ne prikuplja kolačiće niti osobne podatke.</p>
     </footer>
 </body>
 </html>

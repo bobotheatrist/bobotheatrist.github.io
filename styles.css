@@ -1,3 +1,7 @@
+/* ==========================================================================
+   1. Global Styles
+   ========================================================================== */
+
 :root {
     --primary: #34495e;
     --secondary: #9b7c5f;
@@ -19,7 +23,10 @@ body {
     overflow-x: hidden;
 }
 
-/* Header and Navigation */
+/* ==========================================================================
+   2. Header and Navigation
+   ========================================================================== */
+
 header {
     position: fixed;
     top: 0;
@@ -49,21 +56,22 @@ header.scrolled {
 }
 
 .logo-img {
-    height: 40px; /* Adjust this value based on your desired size */
-    width: auto; /* Maintains aspect ratio */
-    max-width: 100%; /* Ensures it doesn't overflow on small screens */
+    height: 40px;
+    width: auto;
+    max-width: 100%;
 }
 
 .logo-header {
-    height: 100px; /* Adjust this value based on your desired size */
-    width: auto; /* Maintains aspect ratio */
-    max-width: 100%; /* Ensures it doesn't overflow on small screens */
+    height: 100px;
+    width: auto;
+    max-width: 100%;
     padding-bottom: 20px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 nav ul li {
@@ -98,6 +106,33 @@ nav ul li a.active {
     color: var(--accent);
 }
 
+/* Language Switcher */
+.language-switcher-item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.language-switcher {
+    color: var(--dark);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.language-switcher.active {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.language-separator {
+    margin: 0 5px;
+    color: var(--dark);
+}
+
+/* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -122,17 +157,9 @@ nav ul li a.active {
     transition: .25s ease-in-out;
 }
 
-.menu-toggle span:nth-child(1) {
-    top: 0px;
-}
-
-.menu-toggle span:nth-child(2) {
-    top: 9px;
-}
-
-.menu-toggle span:nth-child(3) {
-    top: 18px;
-}
+.menu-toggle span:nth-child(1) { top: 0px; }
+.menu-toggle span:nth-child(2) { top: 9px; }
+.menu-toggle span:nth-child(3) { top: 18px; }
 
 .menu-toggle.open span:nth-child(1) {
     top: 9px;
@@ -149,15 +176,16 @@ nav ul li a.active {
     transform: rotate(-135deg);
 }
 
-/* New Hero Section */
+/* ==========================================================================
+   3. Hero Section
+   ========================================================================== */
+
 #hero {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    margin-top: 0;
-    padding-top: 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -243,12 +271,15 @@ nav ul li a.active {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Cards Section */
+/* ==========================================================================
+   4. Cards Section
+   ========================================================================== */
+
 #cards {
     position: relative;
-    min-height: 300vh; /* Extended height for 3 cards */
-    padding-top: 100vh; /* Start below hero */
-    z-index: 2; /* Ensure cards are above hero */
+    min-height: 300vh;
+    padding-top: 100vh;
+    z-index: 2;
 }
 
 .card-container {
@@ -308,17 +339,9 @@ nav ul li a.active {
     /*filter: blur(5px);*/
 }
 
-.card:nth-child(1) .card-image {
-    background-image: url('images/2.webp');
-}
-
-.card:nth-child(2) .card-image {
-    background-image: url('images/3.webp');
-}
-
-.card:nth-child(3) .card-image {
-    background-image: url('images/4.webp');
-}
+.card:nth-child(1) .card-image { background-image: url('images/2.webp'); }
+.card:nth-child(2) .card-image { background-image: url('images/3.webp'); }
+.card:nth-child(3) .card-image { background-image: url('images/4.webp'); }
 
 .card h2 {
     font-size: 2rem;
@@ -332,7 +355,10 @@ nav ul li a.active {
     color: #555;
 }
 
-/* Main Content Sections */
+/* ==========================================================================
+   5. Main Content Sections
+   ========================================================================== */
+
 section {
     padding: 80px 40px;
 }
@@ -342,11 +368,11 @@ section:nth-child(even) {
 }
 
 #services {
-    background-color: #f0f4f8; /* Light blue background for services */
+    background-color: #f0f4f8;
 }
 
 #gallery {
-    background-color: #f8f0f4; /* Light pink background for projects */
+    background-color: #f8f0f4;
 }
 
 .section-title {
@@ -480,7 +506,10 @@ section:nth-child(even) {
     gap: 30px;
 }
 
-/* Modal with Carousel */
+/* ==========================================================================
+   6. Modal with Carousel
+   ========================================================================== */
+
 .modal {
     display: none;
     position: fixed;
@@ -553,7 +582,7 @@ section:nth-child(even) {
     justify-content: center;
     align-items: center;
     transition: opacity 0.5s ease-in-out;
-    background: white; /* Card background remains white */
+    background: white;
 }
 
 .modal-carousel .carousel-slide.active {
@@ -569,27 +598,13 @@ section:nth-child(even) {
     display: block;
     margin: auto;
     position: relative;
-}
-
-/* Polaroid fade-in effect */
-.modal-carousel .carousel-slide img {
-    background: black; /* Black background for fade effect */
+    background: black;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .modal-carousel .carousel-slide.active img {
     opacity: 1;
-}
-
-.modal-carousel .carousel-slide img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: auto;
 }
 
 .modal-carousel .carousel-arrows {
@@ -620,13 +635,8 @@ section:nth-child(even) {
     position: relative;
 }
 
-.modal-carousel .carousel-arrow.prev {
-    left: 20px;
-}
-
-.modal-carousel .carousel-arrow.next {
-    right: 20px;
-}
+.modal-carousel .carousel-arrow.prev { left: 20px; }
+.modal-carousel .carousel-arrow.next { right: 20px; }
 
 .modal-carousel .carousel-arrow:hover {
     color: var(--accent);
@@ -682,10 +692,7 @@ section:nth-child(even) {
     scrollbar-color: var(--accent) rgba(0,0,0,0.1);
 }
 
-.modal-thumbnails::-webkit-scrollbar {
-    height: 6px;
-}
-
+.modal-thumbnails::-webkit-scrollbar { height: 6px; }
 .modal-thumbnails::-webkit-scrollbar-thumb {
     background-color: var(--accent);
     border-radius: 3px;
@@ -728,7 +735,10 @@ section:nth-child(even) {
     margin-bottom: 0;
 }
 
-/* Contact Section */
+/* ==========================================================================
+   7. Contact Section
+   ========================================================================== */
+
 .contact-emails {
     margin-top: 20px;
 }
@@ -747,20 +757,12 @@ section:nth-child(even) {
 }
 
 .contact-emails a:hover {
-    color: var(--accent);; /* Use your site's accent color */
+    color: var(--accent);
 }
 
 .contact-emails i {
     margin-right: 10px;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .contact-emails a {
-        font-size: 16px;
-    }
-}
-
 
 .social-media {
     margin-top: 30px;
@@ -801,13 +803,45 @@ section:nth-child(even) {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* For Instagram icon specifically */
 .fa-instagram {
     font-size: 42px;
 }
 
-/* Responsive Styles */
+/* ==========================================================================
+   8. Footer
+   ========================================================================== */
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* ==========================================================================
+   9. Responsive Styles
+   ========================================================================== */
+
+/* Tablets and smaller desktops */
 @media (max-width: 991px) {
+    .language-switcher-item {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
     nav ul {
         display: none;
         position: absolute;
@@ -836,17 +870,116 @@ section:nth-child(even) {
     .about-content {
         grid-template-columns: 1fr;
     }
-
 }
 
-/* Consolidated Mobile Styles */
+/* Mobile devices */
 @media screen and (max-width: 768px) {
-/* Hero Section Mobile Fixes */
+    /* --- Modal responsiveness fixes --- */
+    .modal {
+        padding: 15px;
+        overflow: hidden; /* Prevent scrolling on the modal background */
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
+    }
+
+    .modal-description {
+        flex-shrink: 0;
+        margin-bottom: 10px;
+        padding: 15px;
+        overflow-y: auto; /* Allow scrolling for long descriptions */
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .modal-carousel {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 0; /* Critical for flex-grow in a column */
+        margin-bottom: 10px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+
+    .modal-carousel .carousel-container {
+        flex-grow: 1;
+        height: auto; /* Let flexbox determine the height */
+        min-height: 0;
+    }
+
+    .modal-thumbnails {
+        flex-shrink: 0;
+        margin: 0;
+        padding-bottom: 5px;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 45px;
+    }
+
+    .modal-carousel .carousel-arrows {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .modal-carousel .carousel-arrow.prev { left: -15px; }
+    .modal-carousel .carousel-arrow.next { right: -15px; }
+    
+    .modal-carousel .carousel-arrow {
+        color: black;
+        text-shadow: none;
+    }
+
+    .image-counter {
+        position: relative; /* Changed from absolute */
+        text-align: center;
+        margin-top: 8px; /* Space below the carousel */
+        color: #555; /* Darker text for readability */
+        background-color: transparent; /* Removed background */
+        padding: 2px 10px;
+        font-size: 0.85rem; /* Slightly smaller font */
+        z-index: 2;
+        /* Reset transform and positioning */
+        bottom: auto;
+        left: auto;
+        transform: none;
+    }
+
+    .close-modal-minimal {
+        top: 10px;
+        right: 10px;
+        color: black;
+        text-shadow: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+    }
+    
+    .close-modal-minimal:hover {
+        color: var(--accent);
+        background-color: white;
+        transform: scale(1.1);
+    }
+
+    /* --- Existing mobile styles --- */
     #hero {
-        position: relative !important; /* Change from fixed to relative on mobile */
+        position: relative !important;
         height: 100vh;
         z-index: 1;
-        pointer-events: auto; /* Allow interaction */
+        pointer-events: auto;
     }
     
     .hero-background {
@@ -858,17 +991,17 @@ section:nth-child(even) {
         background-image: url('images/1.webp');
         background-size: cover;
         background-position: center;
-        opacity: 1; /* Ensure it's visible */
+        opacity: 1;
     }
     
     .hero-content {
         position: relative;
         z-index: 2;
-        opacity: 1 !important; /* Ensure content is visible */
+        opacity: 1 !important;
     }
     
     .logo-hero {
-        height: 60px; /* Smaller on mobile */
+        height: 60px;
     }
     
     .hero-content h1 {
@@ -879,50 +1012,46 @@ section:nth-child(even) {
         font-size: 1rem;
     }
 
-    /* Cards Section Mobile Fixes */
     #cards {
-        position: static !important; /* Remove fixed positioning */
-        min-height: auto !important; /* Reset height */
-        padding-top: 0 !important; /* Reset padding */
-        padding: 40px 20px; /* Add normal section padding */
-        background-color: var(--light); /* Ensure background color */
-        z-index: 2; /* Ensure it's above hero */
+        position: static !important;
+        min-height: auto !important;
+        padding-top: 0 !important;
+        padding: 40px 20px;
+        background-color: var(--light);
+        z-index: 2;
         margin-top: 25px;
     }
 
     .card-container {
-        position: static !important; /* Remove sticky positioning */
-        height: auto !important; /* Reset height */
+        position: static !important;
+        height: auto !important;
         display: flex;
-        flex-direction: column;
-        gap: 30px; /* Space between cards */
+        gap: 30px;
         max-width: 100%;
-        overflow: visible !important; /* Allow content to be visible */
+        overflow: visible !important;
         flex-direction: column;
     }
 
     .card {
-        position: static !important; /* Remove absolute positioning */
-        transform: none !important; /* Remove transforms */
-        opacity: 1 !important; /* Always visible */
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
         width: 100%;
         max-width: 100%;
         height: auto;
         max-height: none;
-        flex-direction: column;
-        margin-bottom: 0; /* Remove margin since we use gap */
-        transition: none; /* Remove transitions */
-        z-index: auto; /* Reset z-index */
+        margin-bottom: 0;
+        transition: none;
+        z-index: auto;
         top: auto !important;
         left: auto !important;
         background: rgba(255, 255, 255, 0.95);
         border-radius: 15px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        overflow: hidden; /* Ensure rounded corners work properly */
+        overflow: hidden;
         flex-direction: column;
     }
 
-    /* Remove active and previous states on mobile */
     .card.active,
     .card.previous {
         position: static !important;
@@ -933,33 +1062,32 @@ section:nth-child(even) {
 
     .card-image {
         width: 100%;
-        height: 250px; /* Fixed height for consistent appearance */
-        order: -1; /* Move image above text */
-        border-radius: 0; /* Remove individual border radius since card has it */
+        height: 250px;
+        order: -1;
+        border-radius: 0;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        display: block; /* Ensure it's visible */
-        flex: none; /* Prevent growing/shrinking */
+        display: block;
+        flex: none;
     }
 
     .card-text {
         padding: 20px;
-        order: 1; /* Ensure text comes after image */
-        flex: 1; /* Take remaining space */
+        order: 1;
+        flex: 1;
     }
 
     .card h2 {
-        font-size: 1.5rem; /* Slightly smaller on mobile */
+        font-size: 1.5rem;
         margin-bottom: 15px;
     }
 
     .card p {
-        font-size: 0.95rem; /* Slightly smaller text */
+        font-size: 0.95rem;
         margin-bottom: 12px;
     }
 
-    /* Existing mobile styles that were already in your CSS */
     .carousel-content h1 {
         font-size: 2rem;
     }
@@ -985,6 +1113,7 @@ section:nth-child(even) {
     }
 }
 
+/* Smaller mobile devices */
 @media (max-width: 576px) {
     section {
         padding: 60px 20px;
@@ -1005,6 +1134,7 @@ section:nth-child(even) {
     }
 }
 
+/* Smallest mobile devices */
 @media screen and (max-width: 480px) {
     #cards {
         padding: 20px 15px;
@@ -1015,7 +1145,7 @@ section:nth-child(even) {
     }
 
     .card-image {
-        height: 200px; /* Slightly smaller on very small screens */
+        height: 200px;
     }
 
     .card-text {
@@ -1041,25 +1171,4 @@ section:nth-child(even) {
     .logo-hero {
         height: 50px;
     }
-}
-
-/* Footer Section */
-footer {
-    background-color: var(--dark);
-    color: var(--light);
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-.disclaimer {
-    font-size: 0.8rem;
-    color: #aaa;
-}
 }

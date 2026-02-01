@@ -4,6 +4,60 @@ function isMobileDevice() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    const enLink = document.getElementById('en-lang-link');
+    const hrLink = document.getElementById('hr-lang-link');
+
+    // Function to handle language change events
+    const handleLanguageClick = (lang, e) => {
+        if (e) e.preventDefault(); // Prevent full page reload
+        changeLanguage(lang);
+        // Update the URL in the browser's address bar
+        history.pushState({lang: lang}, '', `?lang=${lang}`);
+    };
+
+    // Add event listeners
+    enLink.addEventListener('click', (e) => handleLanguageClick('en', e));
+    hrLink.addEventListener('click', (e) => handleLanguageClick('hr', e));
+
+    // Function to change the language
+    function changeLanguage(lang) {
+        // Set the lang attribute of the html tag
+        document.documentElement.lang = lang;
+
+        // Update all elements with data-key attribute
+        document.querySelectorAll('[data-key]').forEach(element => {
+            const key = element.getAttribute('data-key');
+            if (translations[lang] && translations[lang][key]) {
+                // For meta tags, update the content attribute
+                if (element.tagName === 'META') {
+                    element.setAttribute('content', translations[lang][key]);
+                } else {
+                    element.innerHTML = translations[lang][key];
+                }
+            }
+        });
+
+        // Update the active language switcher
+        if (lang === 'en') {
+            enLink.classList.add('active');
+            hrLink.classList.remove('active');
+        } else {
+            hrLink.classList.add('active');
+            enLink.classList.remove('active');
+        }
+    }
+
+    // Determine language from URL parameter on initial load
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialLang = urlParams.get('lang') || 'hr'; // Default to Croatian
+    changeLanguage(initialLang);
+
+    // Handle browser back/forward navigation
+    window.onpopstate = function(event) {
+        const stateLang = event.state ? event.state.lang : (new URLSearchParams(window.location.search).get('lang') || 'hr');
+        changeLanguage(stateLang);
+    };
+
     // Navbar scroll behavior
     const header = document.querySelector('header');
     
@@ -206,8 +260,11 @@ document.addEventListener('DOMContentLoaded', function() {
     galleryItems.forEach(item => {
         item.addEventListener('click', async () => {
             const clickedImg = item.querySelector('img');
-            const title = item.getAttribute('data-title');
-            const description = item.getAttribute('data-description');
+            const project = item.getAttribute('data-project');
+            const lang = document.documentElement.lang;
+
+            const title = translations[lang][`project_${project}_modal_title`];
+            const description = translations[lang][`project_${project}_description`];
             
             // Get project folder from image path
             const imgPath = clickedImg.src;
@@ -250,6 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'gunduliceva': [
                 'images/projects/gunduliceva/0.webp',
                 'images/projects/gunduliceva/1.webp',
+                'images/projects/gunduliceva/1a.webp',
                 'images/projects/gunduliceva/2.webp',
                 'images/projects/gunduliceva/3.webp',
                 'images/projects/gunduliceva/4.webp',
@@ -265,7 +323,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 'images/projects/gunduliceva/14.webp',
                 'images/projects/gunduliceva/15.webp',
                 'images/projects/gunduliceva/16.webp',
-                'images/projects/gunduliceva/17.webp'
+                'images/projects/gunduliceva/17.webp',
+                'images/projects/gunduliceva/18.webp',
+                'images/projects/gunduliceva/18b.webp',
+                'images/projects/gunduliceva/18c.webp',
+                'images/projects/gunduliceva/19.webp',
+                'images/projects/gunduliceva/20.webp',
+                'images/projects/gunduliceva/21.webp',
+                'images/projects/gunduliceva/22.webp',
+                'images/projects/gunduliceva/23.webp',
+                'images/projects/gunduliceva/24.webp',
+                'images/projects/gunduliceva/25.webp',
+                'images/projects/gunduliceva/26.webp',
+                'images/projects/gunduliceva/27.webp',
+                'images/projects/gunduliceva/28.webp',
+                'images/projects/gunduliceva/29.webp',
+                'images/projects/gunduliceva/30.webp',
+                'images/projects/gunduliceva/31.webp',
+                'images/projects/gunduliceva/32.webp',
+                'images/projects/gunduliceva/33.webp',
+                'images/projects/gunduliceva/34.webp',
+                'images/projects/gunduliceva/35.webp',
+                'images/projects/gunduliceva/36.webp',
+                'images/projects/gunduliceva/37.webp'
             ],
             'hazu': [
                 'images/projects/hazu/0.webp',
@@ -299,7 +379,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 'images/projects/kaptol/9.webp',
                 'images/projects/kaptol/10.webp',
                 'images/projects/kaptol/11.webp',
-                'images/projects/kaptol/12.webp'
+                'images/projects/kaptol/12.webp',
+                'images/projects/kaptol/13.webp'
             ],
             'scagliola': [
                 'images/projects/scagliola/0.webp',
@@ -337,6 +418,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 'images/projects/oltar/3.webp',
                 'images/projects/oltar/4.webp',
                 'images/projects/oltar/5.webp'
+            ],
+            'golubovec': [
+                'images/projects/golubovec/0.webp',
+                'images/projects/golubovec/1.webp',
+                'images/projects/golubovec/2.webp',
+                'images/projects/golubovec/3.webp',
+                'images/projects/golubovec/4.webp',
+                'images/projects/golubovec/5.webp',
+                'images/projects/golubovec/6.webp',
+                'images/projects/golubovec/7.webp',
+                'images/projects/golubovec/8.webp',
+                'images/projects/golubovec/9.webp',
+                'images/projects/golubovec/10.webp',
+                'images/projects/golubovec/11.webp'
             ]
         };
 
