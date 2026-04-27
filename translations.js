@@ -79,8 +79,14 @@ const translations = {
         // CONTACT
         "contact_title": "Contact our experts",
         "contact_p": "For all information about the restoration of cultural assets or for cooperation:",
-        "contact_social": "Follow us on social media.",
+        "contact_art3um_title": "ART3um d.o.o.",
+        "contact_tasel_title": "TAŠEL d.o.o.",
+        "contact_person_robert": "Robert",
+        "contact_person_david": "David",
+        "contact_instagram_handle": "@monumentalci",
+        "contact_social": "Discover more about our restoration process and 'behind-the-scenes' moments on our social media.",
         "whatsapp_laser_cta": "Contact us for a free appraisal of laser cleaning via WhatsApp:",
+
         "whatsapp_button_text": "Send appraisal inquiry",
         "whatsapp_message": "Hi, I would like to request a free appraisal of laser cleaning. [Attached are photos and the location]",
 
@@ -165,6 +171,11 @@ const translations = {
         // CONTACT
         "contact_title": "Kontaktirajte naše stručnjake",
         "contact_p": "Za sve informacije o restauraciji kulturnih dobara ili za suradnju:",
+        "contact_art3um_title": "ART3um d.o.o.",
+        "contact_tasel_title": "TAŠEL d.o.o.",
+        "contact_person_robert": "Robert",
+        "contact_person_david": "David",
+        "contact_instagram_handle": "@monumentalci",
         "contact_social": "Zapratite nas i na društvenim mrežama.",
         "whatsapp_laser_cta": "Kontaktirajte nas na WhatsAppu za besplatnu procjenu laserskog čišćenja",
         "whatsapp_button_text": "Pošaljite upit za procjenu",
@@ -174,3 +185,4 @@ const translations = {
         "footer_disclaimer": "Ova web stranica ne prikuplja kolačiće niti osobne podatke."
     }
 };
+
