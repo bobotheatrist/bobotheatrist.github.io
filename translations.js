@@ -176,7 +176,7 @@ const translations = {
         "contact_person_robert": "Robert",
         "contact_person_david": "David",
         "contact_instagram_handle": "@monumentalci",
-        "contact_social": "Zapratite nas i na društvenim mrežama.",
+        "contact_social": "Zapratite nas na društvenim mrežama i otkrijte više o procesu restauracije",
         "whatsapp_laser_cta": "Kontaktirajte nas na WhatsAppu za besplatnu procjenu laserskog čišćenja",
         "whatsapp_button_text": "Pošaljite upit za procjenu",
         "whatsapp_message": "Pozdrav, zanima me ponuda za lasersko čišćenje. [U privitku šaljem slike i lokaciju objekta]",
