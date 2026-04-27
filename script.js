@@ -45,6 +45,25 @@ document.addEventListener('DOMContentLoaded', function() {
             hrLink.classList.add('active');
             enLink.classList.remove('active');
         }
+
+        // Update WhatsApp link with localized message
+        updateWhatsAppLink(lang);
+    }
+
+    // WhatsApp anti-scraping and localization logic
+    function updateWhatsAppLink(lang) {
+        const waLink = document.getElementById('whatsapp-laser-link');
+        if (!waLink) return;
+
+        // Obfuscated number parts
+        const p1 = '385';
+        const p2 = '9761';
+        const p3 = '24672';
+        
+        const message = translations[lang]['whatsapp_message'] || '';
+        const encodedMessage = encodeURIComponent(message);
+        
+        waLink.href = `https://wa.me/${p1}${p2}${p3}?text=${encodedMessage}`;
     }
 
     // Determine language from URL parameter on initial load

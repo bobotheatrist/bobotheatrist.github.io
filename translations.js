@@ -2,11 +2,12 @@
 const translations = {
     en: {
         // META
-        "meta_description": "ART3um d.o.o. and TAŠEL d.o.o. - specialized restoration workshops for the renovation of stone and stucco elements, restoration of cultural assets and architectural heritage in Croatia.",
-        "meta_keywords": "restoration, cultural assets, architectural heritage, restoration works, exploratory works, stucco elements, stone, micro-sandblasting, model making, mold making, positive casting, polychromy, drawn profiles, stucco scagliola, assembly and disassembly, Croatia, Zagreb",
-        "og_title": "ART3um and TAŠEL - Restoration of Cultural Heritage",
+        "site_title": "Restoration and Conservation of Cultural Heritage Zagreb | ART3um & TAŠEL",
+        "meta_description": "ART3um and TAŠEL - Specialized restoration workshops in Zagreb for the renovation of stone and stucco elements, and restoration of architectural heritage in Croatia.",
+        "meta_keywords": "restoration zagreb, conservation croatia, architectural heritage, stone restoration, stucco scagliola, ART3um, TAŠEL",
+        "og_title": "Restoration of Cultural Heritage Zagreb | ART3um & TAŠEL",
         "og_description": "Specialized restoration workshops for the renovation of stone and stucco elements. Quality backed by our name.",
-        "twitter_title": "ART3um and TAŠEL - Restoration of Cultural Heritage",
+        "twitter_title": "Restoration of Cultural Heritage Zagreb | ART3um & TAŠEL",
         "twitter_description": "Specialized restoration workshops for the renovation of stone and stucco elements.",
 
         // HEADER
@@ -16,7 +17,7 @@ const translations = {
         "nav_contact": "Contact Us",
 
         // HERO
-        "hero_h1": "Restoration of Cultural Heritage",
+        "hero_h1": "Restoration of Cultural Heritage in Zagreb",
         "hero_p": "Quality backed by our own name.",
 
         // ABOUT US
@@ -79,6 +80,9 @@ const translations = {
         "contact_title": "Contact our experts",
         "contact_p": "For all information about the restoration of cultural assets or for cooperation:",
         "contact_social": "Follow us on social media.",
+        "whatsapp_laser_cta": "Contact us for a free appraisal of laser cleaning via WhatsApp:",
+        "whatsapp_button_text": "Send appraisal inquiry",
+        "whatsapp_message": "Hi, I would like to request a free appraisal of laser cleaning. [Attached are photos and the location]",
 
         // FOOTER
         "footer_disclaimer": "This website does not collect cookies or personal data."
@@ -162,6 +166,9 @@ const translations = {
         "contact_title": "Kontaktirajte naše stručnjake",
         "contact_p": "Za sve informacije o restauraciji kulturnih dobara ili za suradnju:",
         "contact_social": "Zapratite nas i na društvenim mrežama.",
+        "whatsapp_laser_cta": "Kontaktirajte nas na WhatsAppu za besplatnu procjenu laserskog čišćenja",
+        "whatsapp_button_text": "Pošaljite upit za procjenu",
+        "whatsapp_message": "Pozdrav, zanima me ponuda za lasersko čišćenje. [U privitku šaljem slike i lokaciju objekta]",
 
         // FOOTER
         "footer_disclaimer": "Ova web stranica ne prikuplja kolačiće niti osobne podatke."
