@@ -7,7 +7,32 @@
     <meta name="author" content="ART3um d.o.o. i TAŠEL d.o.o.">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://art3um.hr; font-src https://cdnjs.cloudflare.com; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.googleadservices.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://art3um.hr https://www.google.com https://googleads.g.doubleclick.net https://www.google.hr https://www.googleadservices.com; font-src https://cdnjs.cloudflare.com; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://www.google.com https://www.google.hr;">
+    
+    <!-- Google Consent Mode v2 -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        // Load consent from localStorage if available
+        const savedConsent = localStorage.getItem('user_consent');
+        const initialConsent = savedConsent === 'granted' ? 'granted' : 'denied';
+        
+        gtag('consent', 'default', {
+            'ad_storage': initialConsent,
+            'ad_user_data': initialConsent,
+            'ad_personalization': initialConsent,
+            'analytics_storage': initialConsent,
+            'wait_for_update': 500
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18124998562"></script>
+    <script>
+        gtag('js', new Date());
+        gtag('config', 'AW-18124998562');
+    </script>
     <title data-key="site_title">Restauracija i obnova kulturnih dobara Zagreb | ART3um & TAŠEL</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -525,7 +550,20 @@
 
     <!-- Footer Section -->
     <footer>
-        <p class="disclaimer" data-key="footer_disclaimer">Ova web stranica ne prikuplja kolačiće niti osobne podatke.</p>
+        <p class="disclaimer" data-key="footer_disclaimer">Korištenjem ove web stranice pristajete na našu <a href="politika-privatnosti.html" style="color: inherit; text-decoration: underline;">politiku privatnosti</a>.</p>
+        <p class="copyright">&copy; 2026 ART3um d.o.o. & TAŠEL d.o.o.</p>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        <div class="cookie-content">
+            <p data-key="cookie_text">Ova web stranica koristi kolačiće za mjerenje konverzija putem Google Ads usluge kako bismo poboljšali naše usluge.</p>
+            <div class="cookie-buttons">
+                <a href="politika-privatnosti.html" class="cookie-link" data-key="cookie_link">Politika privatnosti</a>
+                <button id="cookie-accept" class="cookie-btn accept" data-key="cookie_accept">Prihvati sve</button>
+                <button id="cookie-reject" class="cookie-btn reject" data-key="cookie_reject">Odbij sve</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

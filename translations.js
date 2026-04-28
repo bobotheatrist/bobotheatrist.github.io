@@ -90,11 +90,23 @@ const translations = {
         "whatsapp_button_text": "Send appraisal inquiry",
         "whatsapp_message": "Hi, I would like to request a free appraisal of laser cleaning. [Attached are photos and the location]",
 
+        // PRIVACY POLICY
+        "policy_title": "Privacy Policy | ART3um",
+        "policy_back_link": "← Back to Home",
+        "policy_h1": "Privacy Policy and Data Protection",
+
         // FOOTER
-        "footer_disclaimer": "This website does not collect cookies or personal data."
+        "footer_disclaimer": "By using this website, you agree to our <a href='politika-privatnosti.html' style='color: inherit; text-decoration: underline;'>privacy policy</a>.",
+
+        // COOKIE BANNER
+        "cookie_text": "This website uses cookies for Google Ads conversion tracking to help us improve our services.",
+        "cookie_link": "Privacy Policy",
+        "cookie_accept": "Accept all",
+        "cookie_reject": "Reject all"
     },
     hr: {
         // META
+        "site_title": "Restauracija i obnova kulturnih dobara Zagreb | ART3um & TAŠEL",
         "meta_description": "ART3um d.o.o. i TAŠEL d.o.o. - specijalizirane restauratorske radionice za obnovu kamenih i štuko elemenata, restauraciju kulturnih dobara i arhitektonske baštine u Hrvatskoj.",
         "meta_keywords": "restauracija, kulturna dobra, arhitektonska baština, restauratorski radovi, istražni radovi, štuko elementi, kamen, mikropjeskarenje, izrada modela, izrada kalupa, lijevanje pozitiva, polikromija, vučene profilacije, stucco scagliola, montaže i demontaže, Hrvatska, Zagreb",
         "og_title": "ART3um i TAŠEL - Restauracija kulturnih dobara",
@@ -182,7 +194,12 @@ const translations = {
         "whatsapp_message": "Pozdrav, zanima me ponuda za lasersko čišćenje. [U privitku šaljem slike i lokaciju objekta]",
 
         // FOOTER
-        "footer_disclaimer": "Ova web stranica ne prikuplja kolačiće niti osobne podatke."
+        "footer_disclaimer": "Korištenjem ove web stranice pristajete na našu <a href='politika-privatnosti.html' style='color: inherit; text-decoration: underline;'>politiku privatnosti</a>.",
+
+        // COOKIE BANNER
+        "cookie_text": "Ova web stranica koristi kolačiće za mjerenje konverzija putem Google Ads usluge kako bismo poboljšali naše usluge.",
+        "cookie_link": "Politika privatnosti",
+        "cookie_accept": "Prihvati sve",
+        "cookie_reject": "Odbij sve"
     }
 };
-

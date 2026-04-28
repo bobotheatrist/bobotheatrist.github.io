@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
         history.pushState({lang: lang}, '', `?lang=${lang}`);
     };
 
-    // Add event listeners
-    enLink.addEventListener('click', (e) => handleLanguageClick('en', e));
-    hrLink.addEventListener('click', (e) => handleLanguageClick('hr', e));
+    // Add event listeners with null checks
+    if (enLink) enLink.addEventListener('click', (e) => handleLanguageClick('en', e));
+    if (hrLink) hrLink.addEventListener('click', (e) => handleLanguageClick('hr', e));
 
     // Function to change the language
     function changeLanguage(lang) {
@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Update the active language switcher
-        if (lang === 'en') {
+        if (lang === 'en' && enLink && hrLink) {
             enLink.classList.add('active');
             hrLink.classList.remove('active');
-        } else {
+        } else if (lang === 'hr' && enLink && hrLink) {
             hrLink.classList.add('active');
             enLink.classList.remove('active');
         }
@@ -70,6 +70,37 @@ document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const initialLang = urlParams.get('lang') || 'hr'; // Default to Croatian
     changeLanguage(initialLang);
+
+    // Cookie Consent Logic
+    const cookieBanner = document.getElementById('cookie-banner');
+    const cookieAccept = document.getElementById('cookie-accept');
+    const cookieReject = document.getElementById('cookie-reject');
+
+    if (cookieBanner && cookieAccept && cookieReject) {
+        const updateConsent = (status) => {
+            const consentObj = {
+                'ad_storage': status,
+                'ad_user_data': status,
+                'ad_personalization': status,
+                'analytics_storage': status
+            };
+            
+            if (typeof gtag === 'function') {
+                gtag('consent', 'update', consentObj);
+            }
+            
+            localStorage.setItem('user_consent', status);
+            cookieBanner.style.display = 'none';
+        };
+
+        // Show banner if no consent is stored
+        if (!localStorage.getItem('user_consent')) {
+            cookieBanner.style.display = 'block';
+        }
+
+        cookieAccept.addEventListener('click', () => updateConsent('granted'));
+        cookieReject.addEventListener('click', () => updateConsent('denied'));
+    }
 
     // Handle browser back/forward navigation
     window.onpopstate = function(event) {
