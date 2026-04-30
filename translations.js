@@ -91,7 +91,7 @@ const translations = {
         "whatsapp_message": "Hi, I would like to request a free appraisal of laser cleaning. [Attached are photos and the location]",
 
         // PRIVACY POLICY
-        "policy_title": "Privacy Policy | ART3um",
+        "policy_title": "Privacy Policy | ART3um & TAŠEL",
         "policy_back_link": "← Back to Home",
         "policy_h1": "Privacy Policy and Data Protection",
 
@@ -99,10 +99,60 @@ const translations = {
         "footer_disclaimer": "By using this website, you agree to our <a href='politika-privatnosti.html' style='color: inherit; text-decoration: underline;'>privacy policy</a>.",
 
         // COOKIE BANNER
-        "cookie_text": "This website uses cookies for Google Ads conversion tracking to help us improve our services.",
+        "cookie_text": "This website uses cookies for Google Ads conversion tracking. Cookies are activated only after your consent.",
         "cookie_link": "Privacy Policy",
         "cookie_accept": "Accept all",
-        "cookie_reject": "Reject all"
+        "cookie_reject": "Reject all",
+
+        // PRIVACY POLICY FULL CONTENT
+        "policy_intro": "The companies <strong>ART3um d.o.o.</strong> and <strong>TAŠEL d.o.o.</strong> attach great importance to the protection of your personal data. This Privacy Policy governs the handling of information we process during your visit to our website or communication via the WhatsApp service.",
+        "policy_1_h2": "1. Joint Data Controllers",
+        "policy_1_p1": "This website is jointly owned by two companies that, in certain circumstances, act as joint controllers of personal data in accordance with Art. 26 of the General Data Protection Regulation (GDPR):",
+        "policy_1_art3um": "<strong>ART3um d.o.o.</strong><br>Vukovarska 58, 32229 Petrovci, Croatia<br>E-mail: robert@art3um.hr",
+        "policy_1_tasel": "<strong>TAŠEL d.o.o.</strong><br>Vlaška ulica 85, 10000 Zagreb<br>E-mail: david@tasel.hr",
+        "policy_1_p2": "Each company receives inquiries addressed to its contact channel independently. However, in cases where both companies jointly participate in the execution of a project (e.g., laser cleaning or other combined restoration services), personal data relevant to that project may be exchanged exclusively for the purpose of executing that project. In this case, both companies act as joint controllers for the data in question.",
+        "policy_1_p3": "The essence of this joint processing agreement is available upon request, and data subjects can exercise their rights against either of the listed companies.",
+        "policy_1_contact": "Contact point for inquiries related to personal data protection: robert@art3um.hr",
+        
+        "policy_2_h2": "2. Legal Basis for Processing",
+        "policy_2_p": "We collect and process your personal data in accordance with the General Data Protection Regulation (GDPR). The processing is based on:",
+        "policy_2_li1": "<strong>Your consent:</strong> For the use of third-party cookies (Google Ads) and initiating contact via WhatsApp.",
+        "policy_2_li2": "<strong>Legitimate interest:</strong> To ensure the functionality of the website and respond to your inquiries.",
+        "policy_2_li3": "<strong>Execution of a contract:</strong> If you contact us for business cooperation or an offer.",
+
+        "policy_3_h2": "3. Cookies and Google Ads",
+        "policy_3_p1": "Our site uses cookies to measure conversions via the Google Ads service. Cookies are activated exclusively after your consent via the cookie notice displayed upon your first visit. We have implemented Google Consent Mode v2, which means that conversion measurement is adjusted to your choice.",
+        "policy_3_table": "<div class='table-container'><table><thead><tr><th>Name / Tool</th><th>Provider</th><th>Purpose</th><th>Category</th><th>Duration</th></tr></thead><tbody><tr><td>_gcl_au</td><td>Google</td><td>Conversion measurement – Google Ads</td><td>Marketing</td><td>90 days</td></tr><tr><td>_gac_*</td><td>Google</td><td>Storage of conversion data</td><td>Marketing</td><td>90 days</td></tr><tr><td>IDE</td><td>Google (doubleclick.net)</td><td>Ad measurement and optimization</td><td>Marketing</td><td>13 months</td></tr><tr><td>test_cookie</td><td>Google</td><td>Check for cookie support</td><td>Necessary</td><td>Session</td></tr><tr><td>user_consent</td><td>art3um.hr</td><td>Storage of privacy choices (Local Storage)</td><td>Necessary</td><td>Permanent</td></tr></tbody></table></div>",
+        "policy_3_p2": "More about how Google uses data can be found at: <a href='https://policies.google.com/technologies/ads' target='_blank'>Google Ads Rules</a>.",
+
+        "policy_4_h2": "4. Communication via WhatsApp",
+        "policy_4_p": "Our website contains a link to WhatsApp. By clicking that button, you voluntarily access an external platform. ART3um d.o.o. and TAŠEL d.o.o. do not collect any data by the click itself, but exclusively the data you send us in the message (phone number, name, inquiry content). We use this data exclusively to respond to you.",
+
+        "policy_5_h2": "5. Data Retention Periods",
+        "policy_5_p": "We keep your data only as long as necessary to fulfill the purpose for which they were collected:",
+        "policy_5_li1": "Inquiry data (e-mail, WhatsApp) is kept until the end of correspondence, unless cooperation continues, in which case it is kept in accordance with legal deadlines (e.g., accounting regulations).",
+        "policy_5_li2": "Cookies have a retention period specified in the cookie table in section 3 of this Policy. Upon expiration or withdrawal of consent, cookies are deleted.",
+
+        "policy_6_h2": "6. Your Rights",
+        "policy_6_p1": "In accordance with the GDPR, you have the following rights:",
+        "policy_6_li1": "<strong>Right of access:</strong> You can get confirmation whether your data is being processed.",
+        "policy_6_li2": "<strong>Right to rectification:</strong> You can request the correction of inaccurate data.",
+        "policy_6_li3": "<strong>Right to erasure:</strong> You can request the deletion of data ('right to be forgotten').",
+        "policy_6_li4": "<strong>Right to restriction of processing and objection:</strong> You can object to the way we use your data.",
+        "policy_6_li5": "<strong>Withdrawal of consent:</strong> You can delete cookies at any time or request termination of communication.",
+        "policy_6_p2": "We will respond to your request without delay, and at the latest within <strong>30 days</strong>.",
+
+        "policy_7_h2": "7. Right to Lodge a Complaint with a Supervisory Authority",
+        "policy_7_p1": "If you consider that the processing of your personal data is in conflict with the GDPR, you have the right to lodge a complaint with the competent supervisory authority:",
+        "policy_7_azop": "<strong>Personal Data Protection Agency (AZOP)</strong><br>Selska cesta 136, 10 000 Zagreb<br>Web: <a href='https://azop.hr' target='_blank'>www.azop.hr</a>",
+
+        "policy_8_h2": "8. Technical and Organizational Protection",
+        "policy_8_p1": "We take all reasonable technical and organizational measures to protect your data from loss, misuse, or unauthorized access. Access to your data is strictly limited to authorized persons who are bound by confidentiality. The same principles are applied by TAŠEL d.o.o. for the data it processes itself.",
+
+        "policy_9_h2": "9. Changes to the Privacy Policy",
+        "policy_9_p1": "We reserve the right to change this Privacy Policy. All changes will be published on this page with an updated date. We recommend checking the content periodically. Continued use of the website after the publication of changes is considered acceptance of the new terms to the extent permitted by applicable regulations.",
+
+        "policy_last_update": "Last update: April 30, 2026."
     },
     hr: {
         // META
@@ -197,9 +247,50 @@ const translations = {
         "footer_disclaimer": "Korištenjem ove web stranice pristajete na našu <a href='politika-privatnosti.html' style='color: inherit; text-decoration: underline;'>politiku privatnosti</a>.",
 
         // COOKIE BANNER
-        "cookie_text": "Ova web stranica koristi kolačiće za mjerenje konverzija putem Google Ads usluge kako bismo poboljšali naše usluge.",
+        "cookie_text": "Ova web stranica koristi kolačiće za mjerenje konverzija putem Google Ads usluge kako bismo poboljšali naše usluge. Kolačići se aktiviraju isključivo nakon vaše privole.",
         "cookie_link": "Politika privatnosti",
         "cookie_accept": "Prihvati sve",
-        "cookie_reject": "Odbij sve"
+        "cookie_reject": "Odbij sve",
+
+        // PRIVACY POLICY FULL CONTENT
+        "policy_intro": "Tvrtke <strong>ART3um d.o.o.</strong> i <strong>TAŠEL d.o.o.</strong> pridaju veliku važnost zaštiti vaših osobnih podataka. Ova Pravila privatnosti uređuju način postupanja s informacijama koje obrađujemo prilikom vašeg posjeta našoj web stranici ili komunikacije putem WhatsApp usluge.",
+        "policy_1_h2": "1. Zajednički voditelji obrade podataka",
+        "policy_1_p1": "Ova web stranica zajednički je u vlasništvu dviju tvrtki koje, u određenim okolnostima, nastupaju kao zajednički voditelji obrade osobnih podataka sukladno čl. 26. Opće uredbe o zaštiti podataka (GDPR):",
+        "policy_1_art3um": "<strong>ART3um d.o.o.</strong><br>Vukovarska 58, 32229 Petrovci, Hrvatska<br>E-pošta: robert@art3um.hr",
+        "policy_1_tasel": "<strong>TAŠEL d.o.o.</strong><br>Vlaška ulica 85, 10000 Zagreb<br>E-pošta: david@tasel.hr",
+        "policy_1_p2": "Svaka tvrtka prima upite upućene njezinom kontakt kanalu samostalno. Međutim, u slučajevima kada obje tvrtke zajednički sudjeluju u izvođenju projekta (npr. lasersko čišćenje ili druge kombinirane restauratorske usluge), osobni podaci relevantni za taj projekt mogu biti međusobno razmijenjeni isključivo u svrhu izvršenja tog projekta. U tom slučaju obje tvrtke nastupaju kao zajednički voditelji obrade za predmetne podatke.",
+        "policy_1_p3": "Bit ovog dogovora o zajedničkoj obradi dostupna je na zahtjev, a podatkovni ispitanici mogu svoja prava ostvarivati prema bilo kojoj od navedenih tvrtki.",
+        "policy_1_contact": "Kontakt točka za upite vezane uz zaštitu osobnih podataka: robert@art3um.hr",
+        "policy_2_h2": "2. Pravna osnova za obradu",
+        "policy_2_p": "Vaše osobne podatke prikupljamo i obrađujemo sukladno Općoj uredbi o zaštiti podataka (GDPR) te Zakonu o provedbi Opće uredbe o zaštiti podataka (NN 42/18). Obrada se temelji na:",
+        "policy_2_li1": "<strong>Vašoj privoli:</strong> Za korištenje kolačića trećih strana (Google Ads) i iniciranje kontakta putem WhatsAppa.",
+        "policy_2_li2": "<strong>Legitimnom interesu:</strong> Za osiguranje funkcionalnosti web stranice i odgovaranje na vaše upite.",
+        "policy_2_li3": "<strong>Izvršavanju ugovora:</strong> Ukoliko nas kontaktirate radi poslovne suradnje ili ponude.",
+        "policy_3_h2": "3. Kolačići (Cookies) i Google Ads",
+        "policy_3_p1": "Naša stranica koristi kolačiće za mjerenje konverzija putem usluge Google Ads. Kolačići se aktiviraju isključivo nakon vaše privole putem obavijesti o kolačićima prikazane pri prvom posjetu. Implementirali smo Google Consent Mode v2, što znači da se mjerenje konverzija prilagođava vašem odabiru.",
+        "policy_3_table": "<div class='table-container'><table><thead><tr><th>Naziv / Alat</th><th>Pružatelj</th><th>Svrha</th><th>Kategorija</th><th>Trajanje</th></tr></thead><tbody><tr><td>_gcl_au</td><td>Google</td><td>Mjerenje konverzija – Google Ads</td><td>Marketing</td><td>90 dana</td></tr><tr><td>_gac_*</td><td>Google</td><td>Pohrana podataka o konverzijama</td><td>Marketing</td><td>90 dana</td></tr><tr><td>IDE</td><td>Google (doubleclick.net)</td><td>Mjerenje i optimizacija oglasa</td><td>Marketing</td><td>13 mjeseci</td></tr><tr><td>test_cookie</td><td>Google</td><td>Provjera podrške za kolačiće</td><td>Nužni</td><td>Sesija</td></tr><tr><td>user_consent</td><td>art3um.hr</td><td>Pohrana odabira privatnosti (Local Storage)</td><td>Nužni</td><td>Trajno</td></tr></tbody></table></div>",
+        "policy_3_p2": "Više o tome kako Google koristi podatke možete pročitati na: <a href='https://policies.google.com/technologies/ads' target='_blank'>Google Ads Pravila</a>.",
+        "policy_4_h2": "4. Komunikacija putem WhatsAppa",
+        "policy_4_p": "Naša web stranica sadrži poveznicu na WhatsApp. Klikom na taj gumb, dobrovoljno pristupate vanjskoj platformi. ART3um d.o.o. i TAŠEL d.o.o. ne prikupljaju nikakve podatke samim klikom, već isključivo one podatke koje nam sami pošaljete u poruci (broj telefona, ime, sadržaj upita). Te podatke koristimo isključivo kako bismo vam odgovorili.",
+        "policy_5_h2": "5. Rokovi pohrane podataka",
+        "policy_5_p": "Vaše podatke čuvamo samo onoliko dugo koliko je potrebno za ispunjenje svrhe u koju su prikupljeni:",
+        "policy_5_li1": "Podaci iz upita (e-pošta, WhatsApp) čuvaju se do završetka korespondencije, osim ako se suradnja nastavi, u kojem slučaju se čuvaju sukladno zakonskim rokovima (npr. računovodstveni propisi).",
+        "policy_5_li2": "Kolačići imaju rok trajanja naveden u tablici kolačića u odjeljku 3. ove Politike. Po isteku roka ili povlačenjem privole, kolačići se brišu.",
+        "policy_6_h2": "6. Vaša prava",
+        "policy_6_p1": "Sukladno GDPR-u, imate sljedeća prava:",
+        "policy_6_li1": "<strong>Pravo na pristup:</strong> Možete dobiti potvrdu obrađuju li se vaši podaci.",
+        "policy_6_li2": "<strong>Pravo na ispravak:</strong> Možete zatražiti ispravak netočnih podataka.",
+        "policy_6_li3": "<strong>Pravo na brisanje:</strong> Možete zatražiti brisanje podataka (\"pravo na zaborav\").",
+        "policy_6_li4": "<strong>Pravo na ograničenje obrade i prigovor:</strong> Možete prigovoriti načinu na koji koristimo vaše podatke.",
+        "policy_6_li5": "<strong>Povlačenje privole:</strong> U svakom trenutku možete obrisati kolačiće ili zatražiti prestanak komunikacije.",
+        "policy_6_p2": "Na vaš zahtjev odgovorit ćemo bez odgađanja, a najkasnije u roku od <strong>30 dana</strong>.",
+        "policy_7_h2": "7. Pravo na pritužbu nadzornom tijelu",
+        "policy_7_p1": "Ako smatrate da je obrada vaših osobnih podataka u suprotnosti s Općom uredbom o zaštiti podataka, imate pravo podnijeti pritužbu nadležnom nadzornom tijelu:",
+        "policy_7_azop": "<strong>Agencija za zaštitu osobnih podataka (AZOP)</strong><br>Selska cesta 136, 10 000 Zagreb<br>Web: <a href='https://azop.hr' target='_blank'>www.azop.hr</a>",
+        "policy_8_h2": "8. Tehnička i organizacijska zaštita",
+        "policy_8_p1": "Poduzimamo sve razumne tehničke i organizacijske mjere kako bismo zaštitili vaše podatke od gubitka, zlouporabe ili neovlaštenog pristupa. Pristup vašim podacima imaju isključivo ovlaštene osobe koje su obvezane na povjerljivost. Ista načela tehničke i organizacijske zaštite primjenjuje i TAŠEL d.o.o. za podatke koje sama obrađuje.",
+        "policy_9_h2": "9. Izmjene Politike privatnosti",
+        "policy_9_p1": "Zadržavamo pravo izmjene ove Politike privatnosti. Sve izmjene bit će objavljene na ovoj stranici s ažuriranim datumom. Preporučujemo povremenu provjeru sadržaja. Nastavak korištenja web stranice nakon objave izmjena smatra se prihvaćanjem novih uvjeta u mjeri dopuštenoj važećim propisima.",
+        "policy_last_update": "Posljednje ažuriranje: 30. travnja 2026."
     }
 };
