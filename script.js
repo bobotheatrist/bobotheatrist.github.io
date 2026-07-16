@@ -395,7 +395,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 'images/projects/gunduliceva/34.webp',
                 'images/projects/gunduliceva/35.webp',
                 'images/projects/gunduliceva/36.webp',
-                'images/projects/gunduliceva/37.webp'
+                'images/projects/gunduliceva/37.webp',
+                'images/projects/gunduliceva/38.webp',
+                'images/projects/gunduliceva/39.webp'
             ],
             'hazu': [
                 'images/projects/hazu/0.webp',
@@ -487,7 +489,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 'images/projects/golubovec/9.webp',
                 'images/projects/golubovec/10.webp',
                 'images/projects/golubovec/11.webp'
+            ],
+            'iasae':[
+                'images/projects/iasae/0.webp',
+                'images/projects/iasae/1.webp',
+                'images/projects/iasae/2.webp',
+                'images/projects/iasae/3.webp'
+            ],
+            'katedrala':[
+                'images/projects/katedrala/1.webp',
+                'images/projects/katedrala/2.webp',
+                'images/projects/katedrala/3.webp'
+            ],
+            'salzburg':[
+                'images/projects/salzburg/1.webp',
+                'images/projects/salzburg/2.webp',
+                'images/projects/salzburg/3.webp',
+                'images/projects/salzburg/4.webp'
             ]
+
         };
 
         return projectImages[projectName] || [];

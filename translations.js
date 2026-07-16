@@ -75,6 +75,15 @@ const translations = {
         "project_golubovec_title": "Restoration of stone elements of Stubički Golubovec Castle",
         "project_golubovec_modal_title": "Restoration of stone elements of Stubički Golubovec Castle",
         "project_golubovec_description": "Conservation and restoration works were carried out on the castle's stone elements - the main entrance portals and the chapel entrance, late Baroque staircase treatments, and the ceremonial altana.",
+        "project_iasae_title": "Restoration of the stone fence of the Aqua Iasae Roman pool complex",
+        "project_iasae_modal_title": "Aqua Iasae, Varaždinske Toplice",
+        "project_iasae_description": "At the Aqua Iasae archaeological site, we carried out restoration work on a part of the stone fence of the Roman pool complex. The works included the conservation and restoration of stone elements with the aim of preserving their historical authenticity, stability, and readability, using materials and procedures appropriate for cultural heritage.",
+        "project_katedrala_title": "Restoration of the relief on the St. Florian bell - Zagreb Cathedral",
+        "project_katedrala_modal_title": "St. Florian Bell, Zagreb Cathedral",
+        "project_katedrala_description": "Restoration work was carried out on the relief depiction of St. Florian on the St. Florian bell from the Zagreb Cathedral. The intervention was aimed at preserving the original material and increasing the legibility of the motif, with careful removal of surface deposits and the implementation of minimally invasive restoration procedures appropriate for a historical artifact.",
+        "project_salzburg_title": "Restoration of the profiled cornice and stucco decorations - Hotel Bristol, Salzburg",
+        "project_salzburg_modal_title": "Hotel Bristol, Salzburg",
+        "project_salzburg_description": "On the facade of the Hotel Bristol in Salzburg, restoration works were carried out on a profiled cornice with stucco decorations. The works included the repair of damaged parts, the renovation and reconstruction of drawn profiling and stucco elements, using traditional restoration techniques to preserve the original appearance and architectural value of the historical facade.",
 
         // CONTACT
         "contact_title": "Contact our experts",
@@ -229,6 +238,17 @@ const translations = {
         "project_golubovec_title": "Restauracija kamenih elemenata dvorca Stubički Golubovec",
         "project_golubovec_modal_title": "Restauracija kamenih elemenata dvorca Stubički Golubovec",
         "project_golubovec_description": "Na dvorcu su izvedeni konzervatorski restauratorski radovi na kamenim elementima-portalima glavnog ulaza i ulaza u kapelu, kasno baroknim obradama stubišta i svečanoj altani.",
+        "project_iasae_title": "Restauracija ograde rimskih termi arheološkog nalazišta Aqua Iasae, Varaždinske Toplice",
+        "project_iasae_modal_title": "Restauracija ograde rimskih termi arheološkog nalazišta Aqua Iasae, Varaždinske Toplice",
+        "project_iasae_description": "Na arheološkom lokalitetu Aqua Iasae izveli smo restauratorske radove na dijelu kamene ograde rimskog bazenskog kompleksa. Radovi su obuhvatili konzervaciju i restauraciju kamenih elemenata s ciljem očuvanja njihove povijesne autentičnosti, stabilnosti i čitljivosti, uz primjenu materijala i postupaka primjerenih kulturnoj baštini.",
+        "project_katedrala_title": "Restauracija reljefa na zvonu Sv. Florijana Zagrebačke katedrale",
+        "project_katedrala_modal_title": "Restauracija reljefa na zvonu Sv. Florijana Zagrebačke katedrale",
+        "project_katedrala_description": "Na zvonu sv. Florijana sa Zagrebačke katedrale izvedeni su restauratorski radovi na reljefnom prikazu sv. Florijana. Zahvat je bio usmjeren na očuvanje izvornog materijala i povećanje čitljivosti motiva, uz pažljivo uklanjanje površinskih naslaga i provedbu minimalno invazivnih restauratorskih postupaka primjerenih povijesnom artefaktu.",
+        "project_salzburg_title": "Restauracija profiliranog vijenca sa štuko dekoracijama hotela Bristol u Salzburgu",
+        "project_salzburg_modal_title": "Restauracija profiliranog vijenca sa štuko dekoracijama hotela Bristol u Salzburgu",
+        "project_salzburg_description": "Na pročelju hotela Bristol u Salzburgu izvedeni su restauratorski radovi na profiliranom vijencu sa štuko dekoracijama. Radovi su obuhvatili sanaciju oštećenih dijelova, obnovu i rekonstrukciju vučene profilacije i štuko elemenata, uz primjenu tradicionalnih restauratorskih tehnika s ciljem očuvanja izvornog izgleda i arhitektonske vrijednosti povijesnog pročelja.",
+
+
 
         // CONTACT
         "contact_title": "Kontaktirajte naše stručnjake",
