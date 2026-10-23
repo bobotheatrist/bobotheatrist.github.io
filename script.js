@@ -89,12 +89,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('consent', 'update', consentObj);
             }
             
-            localStorage.setItem('user_consent', status);
+            try { localStorage.setItem('user_consent', status); } catch (e) { /* storage unavailable */ }
+            if (status === 'denied') deleteAdCookies();
             cookieBanner.style.display = 'none';
         };
 
+        // Remove Google Ads first-party cookies when consent is withdrawn
+        function deleteAdCookies() {
+            const host = window.location.hostname;
+            const domains = ['', host, '.' + host, '.' + host.replace(/^www\./, '')];
+            document.cookie.split(';').forEach(c => {
+                const name = c.split('=')[0].trim();
+                if (/^(_gcl_|_gac_)/.test(name)) {
+                    domains.forEach(d => {
+                        document.cookie = name + '=; Max-Age=0; path=/' + (d ? '; domain=' + d : '');
+                    });
+                }
+            });
+        }
+
+        // "Cookie settings" link in the footer re-opens the consent banner
+        document.querySelectorAll('.cookie-settings-link').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                cookieBanner.style.display = 'block';
+                cookieAccept.focus();
+            });
+        });
+
         // Show banner if no consent is stored
-        if (!localStorage.getItem('user_consent')) {
+        let storedConsent = null;
+        try { storedConsent = localStorage.getItem('user_consent'); } catch (e) { /* storage unavailable */ }
+        if (!storedConsent) {
             cookieBanner.style.display = 'block';
         }
 
@@ -179,8 +205,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     // Enhanced scroll handling for cards
     function handleCardsScroll() {
-        // Skip scroll handling on mobile devices
-        if (isMobileDevice()) {
+        // Skip scroll handling on mobile devices and on subpages without the cards section
+        if (isMobileDevice() || !cardsSection) {
             return;
         }
 
@@ -224,6 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const scrollPosition = window.scrollY;
         const cardsSection = document.getElementById('cards');
+        if (!cardsSection) return; // subpages have no hero/cards
         const servicesSection = document.getElementById('services');
         const cardsEnd = cardsSection.offsetTop + cardsSection.offsetHeight;
         const hero = document.getElementById('hero');
@@ -251,7 +278,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 card.classList.remove('active', 'previous');
             });
             // Reset hero opacity on mobile
-            document.getElementById('hero').style.opacity = '1';
+            const heroEl = document.getElementById('hero');
+            if (heroEl) heroEl.style.opacity = '1';
         } else {
             // Re-initialize desktop behavior
             updateCardPosition();
@@ -260,10 +288,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const navMenu = document.getElementById('nav-menu');
     
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        menuToggle.classList.toggle('open');
-    });
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+    }
     
     // Navigation smooth scroll
     const navLinks = document.querySelectorAll('nav ul li a');
@@ -273,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             // Close mobile menu if open
-            navMenu.classList.remove('active');
+            if (navMenu) navMenu.classList.remove('active');
             
             // Get the target section
             const targetId = this.getAttribute('href');
@@ -293,6 +323,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Everything below needs the homepage gallery; subpages (privacy, impressum) stop here
+    if (!document.getElementById('imageModal')) return;
+
     // Gallery modal with carousel functionality
     const galleryItems = document.querySelectorAll('.gallery-item');
     const modal = document.getElementById('imageModal');
@@ -322,13 +355,14 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Find all images in this project folder
             projectImages = await getProjectImages(projectName);
+            await loadImageManifest();
             
             // Set title/description
             modalTitle.textContent = title;
             modalDescription.textContent = description;
             
             // Populate carousel
-            populateCarousel(projectImages);
+            populateCarousel(projectImages, title);
             
             // Show first image
             showImage(0);
@@ -513,7 +547,49 @@ document.addEventListener('DOMContentLoaded', function() {
         return projectImages[projectName] || [];
     }
     
-    function populateCarousel(images) {
+    // Image variants generated by tools/images.py (images/manifest.json)
+    let imageManifest = null;
+
+    async function loadImageManifest() {
+        if (imageManifest) return imageManifest;
+        try {
+            const response = await fetch('images/manifest.json');
+            imageManifest = response.ok ? await response.json() : {};
+        } catch (e) {
+            imageManifest = {};
+        }
+        return imageManifest;
+    }
+
+    function variantPath(src, width) {
+        return src.replace(/\.webp$/, `-${width}.webp`);
+    }
+
+    function smallestVariant(src) {
+        const entry = imageManifest && imageManifest[src];
+        return entry && entry.variants.length ? variantPath(src, entry.variants[0]) : src;
+    }
+
+    function srcsetFor(src) {
+        const entry = imageManifest && imageManifest[src];
+        if (!entry) return '';
+        return entry.variants
+            .map(w => `${encodeURI(variantPath(src, w))} ${w}w`)
+            .concat(`${encodeURI(src)} ${entry.w}w`)
+            .join(', ');
+    }
+
+    // Load only the visible slide and its neighbours
+    function loadSlide(index) {
+        const slides = modalCarousel.querySelectorAll('.carousel-slide img');
+        if (!slides.length) return;
+        const img = slides[(index + slides.length) % slides.length];
+        if (img.getAttribute('src')) return;
+        if (img.dataset.srcset) img.srcset = img.dataset.srcset;
+        img.src = img.dataset.src;
+    }
+
+    function populateCarousel(images, title) {
         modalCarousel.innerHTML = '';
         const thumbnailsContainer = document.getElementById('modalThumbnails');
         thumbnailsContainer.innerHTML = '';
@@ -525,15 +601,20 @@ document.addEventListener('DOMContentLoaded', function() {
             if (index === 0) slide.classList.add('active');
             
             const img = document.createElement('img');
-            img.src = imgSrc;
-            img.alt = `Project image ${index + 1}`;
+            img.dataset.src = imgSrc;
+            img.dataset.srcset = srcsetFor(imgSrc);
+            img.sizes = '(max-width: 768px) 100vw, 80vw';
+            img.decoding = 'async';
+            img.alt = `${title || ''} – ${index + 1}/${images.length}`;
             
             slide.appendChild(img);
             modalCarousel.appendChild(slide);
 
             // Create thumbnail
             const thumbnail = document.createElement('img');
-            thumbnail.src = imgSrc;
+            thumbnail.src = smallestVariant(imgSrc);
+            thumbnail.loading = 'lazy';
+            thumbnail.alt = '';
             thumbnail.className = 'thumbnail';
             thumbnail.dataset.index = index;
             if (index === 0) thumbnail.classList.add('active');
@@ -561,6 +642,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Set current slide as active
     slides[currentImageIndex].classList.add('active');
+    loadSlide(currentImageIndex);
+    loadSlide(currentImageIndex + 1);
+    loadSlide(currentImageIndex - 1);
     
     // Update active thumbnail
     thumbnails.forEach(thumb => thumb.classList.remove('active'));

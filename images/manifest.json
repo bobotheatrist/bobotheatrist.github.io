@@ -1,0 +1,1529 @@
+{
+ "images/1.webp": {
+  "h": 1109,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/2.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/3.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/4.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/1.webp": {
+  "h": 1277,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/10.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/11.webp": {
+  "h": 1531,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/2.webp": {
+  "h": 1276,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/3.webp": {
+  "h": 2563,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/4.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/5.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/blaz/6.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/7.webp": {
+  "h": 1192,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/8.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/9.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/blaz/blaz.webp": {
+  "h": 442,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 691
+ },
+ "images/projects/golubovec/0.webp": {
+  "h": 938,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/1.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/10.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/11.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/golubovec/2.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/3.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/4.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/5.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/6.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/7.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/8.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/golubovec/9.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/golubovec/stubicki_golubovec.webp": {
+  "h": 767,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1050
+ },
+ "images/projects/gunduliceva/0.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/1.webp": {
+  "h": 1200,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/projects/gunduliceva/10.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/gunduliceva/11.webp": {
+  "h": 916,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/projects/gunduliceva/12.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/gunduliceva/13.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/14.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/15.webp": {
+  "h": 670,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1206
+ },
+ "images/projects/gunduliceva/16.webp": {
+  "h": 1389,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/17.webp": {
+  "h": 1069,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/18.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/18b.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/18c.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/19.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/1a.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/2.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/20.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/21.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/22.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/23.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/24.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/25.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/26.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/27.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/28.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/29.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/3.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/30.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/31.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/32.webp": {
+  "h": 1415,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/33.webp": {
+  "h": 2592,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/34.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/35.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/gunduliceva/36.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/37.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/38.webp": {
+  "h": 1200,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/projects/gunduliceva/39.webp": {
+  "h": 678,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1206
+ },
+ "images/projects/gunduliceva/4.webp": {
+  "h": 1358,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/5.webp": {
+  "h": 1417,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/6.webp": {
+  "h": 1434,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/7.webp": {
+  "h": 1391,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/8.webp": {
+  "h": 2438,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/gunduliceva/9.webp": {
+  "h": 678,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1206
+ },
+ "images/projects/gunduliceva/gunduliceva.webp": {
+  "h": 1859,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1242
+ },
+ "images/projects/hazu/0.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/hazu/1.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1150
+ },
+ "images/projects/hazu/10.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/11.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/12.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/13.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/14.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/15.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/16.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/2.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/hazu/3.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/hazu/4.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/hazu/5.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/hazu/6.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/7.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/hazu/8.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/hazu/9.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/hazu/hazu.webp": {
+  "h": 670,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 1024
+ },
+ "images/projects/iasae/0.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/iasae/1.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 913
+ },
+ "images/projects/iasae/2.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 912
+ },
+ "images/projects/iasae/3.webp": {
+  "h": 1200,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/projects/iasae/iasae.webp": {
+  "h": 670,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1206
+ },
+ "images/projects/kaptol/0.webp": {
+  "h": 2845,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/kaptol/1.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/kaptol/10.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/kaptol/11.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/kaptol/12.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/kaptol/13.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1080
+ },
+ "images/projects/kaptol/2.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/kaptol/3.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/kaptol/4.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/kaptol/5.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/kaptol/6.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/kaptol/7.webp": {
+  "h": 847,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/kaptol/8.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/kaptol/9.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/kaptol/prije potresa 02.webp": {
+  "h": 1081,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/katedrala/1.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/katedrala/2.webp": {
+  "h": 1113,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1206
+ },
+ "images/projects/katedrala/3.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 912
+ },
+ "images/projects/katedrala/Zvono.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1211
+ },
+ "images/projects/oltar/0.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/oltar/1.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/oltar/10.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/oltar/2.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/oltar/3.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/oltar/4.webp": {
+  "h": 1331,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/oltar/5.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/oltar/6.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/oltar/7.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/oltar/8.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/oltar/9.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/oltar/oltar.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1248
+ },
+ "images/projects/salzburg/1.webp": {
+  "h": 1200,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/projects/salzburg/2.webp": {
+  "h": 1200,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/projects/salzburg/3.webp": {
+  "h": 1200,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/projects/salzburg/4.webp": {
+  "h": 1200,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/projects/salzburg/hotel_bristol.webp": {
+  "h": 800,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1200
+ },
+ "images/projects/scagliola/0.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/1.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/10.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/11.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/12.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/13.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/scagliola/14.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/scagliola/15.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/16.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/17.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/18.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/19.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/2.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/20.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/21.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/22.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/23.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/24.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/scagliola/25.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/scagliola/26.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/3.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/scagliola/4.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/scagliola/5.webp": {
+  "h": 1920,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1440
+ },
+ "images/projects/scagliola/6.webp": {
+  "h": 2560,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/7.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/8.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/projects/scagliola/9.webp": {
+  "h": 1440,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/services/1 restauratorski radovi.webp": {
+  "h": 1467,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1100
+ },
+ "images/services/10 stucco tehnike.webp": {
+  "h": 1280,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 960
+ },
+ "images/services/11 polikromija.webp": {
+  "h": 1331,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1920
+ },
+ "images/services/12 lasersko ciscenje.webp": {
+  "h": 1052,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 789
+ },
+ "images/services/2 istrazni radovi.webp": {
+  "h": 1467,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1100
+ },
+ "images/services/3 mikropjeskarenje.webp": {
+  "h": 1280,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 960
+ },
+ "images/services/4 izrada modela prema povijesnim fotografijama.webp": {
+  "h": 1226,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 960
+ },
+ "images/services/5 izrada kalupa od gume.webp": {
+  "h": 1333,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 1000
+ },
+ "images/services/6 lijevanje pozitiva iz kalupa.webp": {
+  "h": 1200,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1600
+ },
+ "images/services/7 montaze i demontaze.webp": {
+  "h": 1067,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 800
+ },
+ "images/services/8 vucene profilacije.webp": {
+  "h": 1052,
+  "variants": [
+   320,
+   640
+  ],
+  "w": 671
+ },
+ "images/services/9 kamen.webp": {
+  "h": 1600,
+  "variants": [
+   320,
+   640,
+   1024
+  ],
+  "w": 1150
+ }
+}
