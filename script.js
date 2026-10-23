@@ -307,6 +307,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Get the target section
             const targetId = this.getAttribute('href');
+            // Only in-page anchors; language links (?lang=xx) are handled above
+            if (!targetId || !targetId.startsWith('#')) return;
             const targetSection = document.querySelector(targetId);
             
             if (targetSection) {
