@@ -94,9 +94,14 @@ const translations = {
         "contact_person_david": "David",
         "contact_instagram_handle": "@monumentalci",
         "contact_social": "Discover more about our restoration process and 'behind-the-scenes' moments on our social media.",
-        "whatsapp_laser_cta": "Contact us for a free appraisal of laser cleaning via WhatsApp:",
-
-        "whatsapp_button_text": "Send appraisal inquiry",
+        "estimate_eyebrow": "Free and without obligation",
+        "estimate_title": "Laser cleaning assessment",
+        "estimate_text": "Laser cleaning is a non-invasive method of removing dirt from stone, stucco and metal. Send us photos and we will assess the scope of work.",
+        "estimate_step_1": "Photograph the surface",
+        "estimate_step_2": "Send the photos and location",
+        "estimate_step_3": "We get back to you with an assessment",
+        "service_estimate_link": "Free assessment →",
+        "whatsapp_button_text": "Send an inquiry on WhatsApp",
         "whatsapp_message": "Hi, I would like to request a free appraisal of laser cleaning. [Attached are photos and the location]",
 
         // PRIVACY POLICY
@@ -278,8 +283,14 @@ const translations = {
         "contact_person_david": "David",
         "contact_instagram_handle": "@monumentalci",
         "contact_social": "Zapratite nas na društvenim mrežama i otkrijte više o procesu restauracije",
-        "whatsapp_laser_cta": "Kontaktirajte nas na WhatsAppu za besplatnu procjenu laserskog čišćenja",
-        "whatsapp_button_text": "Pošaljite upit za procjenu",
+        "estimate_eyebrow": "Besplatno i bez obveze",
+        "estimate_title": "Procjena laserskog čišćenja",
+        "estimate_text": "Lasersko čišćenje je neinvazivna metoda uklanjanja nečistoća s kamena, štuka i metala. Pošaljite nam fotografije i procijenit ćemo opseg radova.",
+        "estimate_step_1": "Fotografirajte površinu",
+        "estimate_step_2": "Pošaljite slike i lokaciju",
+        "estimate_step_3": "Javimo vam procjenu",
+        "service_estimate_link": "Besplatna procjena →",
+        "whatsapp_button_text": "Pošaljite upit na WhatsApp",
         "whatsapp_message": "Pozdrav, zanima me ponuda za lasersko čišćenje. [U privitku šaljem slike i lokaciju objekta]",
 
         // IMPRESUM
