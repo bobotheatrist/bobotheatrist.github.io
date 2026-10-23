@@ -150,8 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const heroContent = document.querySelector('.hero-content');
         const heroBackground = document.querySelector('.hero-background');
         const scrollPosition = window.scrollY;
-        const fadeStart = 20; // Start fading at 100px scroll
-        const fadeEnd = 50; // Fully faded at 400px scroll
+        const fadeStart = 20; // Start fading at 20px scroll
+        const fadeEnd = 50; // Fully faded at 50px scroll
         const blurStart = 50;
         const blurEnd = 200;
         
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Hero fade starts when cards section ends
         const scrollPastCards = Math.max(0, scrollPosition - cardsEnd + window.innerHeight * 0.95);
-        const maxFade = window.innerHeight * 0.95; // Fade over 80% of viewport height
+        const maxFade = window.innerHeight * 0.95; // Fade over 95% of viewport height
         
         if (scrollPastCards > 0 && scrollPastCards < maxFade) {
             // Calculate fade opacity (1 to 0)
